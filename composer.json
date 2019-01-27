@@ -1,33 +1,35 @@
 {
-  "name": "yii-ui/yii2-rubaxa-sortable",
-  "description": "Yii2 implementation of the RubaXa Sortable extension. To create reorderable drag-and-drop lists for modern browsers and touch devices.",
+  "name": "yii-ui/yii2-sortableJS",
+  "description": "Yii2 implementation of the SortableJS/Sortable extension. To create reorderable drag-and-drop lists for modern browsers and touch devices.",
   "keywords": [
     "yii2",
     "sortable",
-    "rubaxa"
+    "sortableJS"
   ],
   "type": "yii2-extension",
   "license": "BSD-3-Clause",
   "support": {
-    "issues": "https://github.com/yii-ui/yii2-rubaxa-sortable/issues",
-    "source": "https://github.com/yii-ui/yii2-rubaxa-sortable"
+    "issues": "https://github.com/coderovich/yii2-sortableJS/issues",
+    "source": "https://github.com/coderovich/yii2-sortableJS"
   },
   "authors": [
     {
       "name": "Christoph Moeke",
       "email": "christophmoeke@gmail.com"
+    },
+    {
+      "name": "SPavlov",
+      "email": "spavlov@li.ru"
     }
   ],
   "require": {
     "bower-asset/sortablejs": "^1.4",
     "yiisoft/yii2": "~2.0.0"
   },
-  "require-dev": {
-    "yiisoft/yii2-coding-standards": "^2.0.1"
-  },
+ 
   "autoload": {
     "psr-4": {
-      "yiiui\\rubaxasortable\\": ""
+      "coderovich\\sortablejs\\": "src"
     }
   }
 }
