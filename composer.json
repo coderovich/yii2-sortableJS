@@ -1,5 +1,5 @@
 {
-  "name": "coderovich/yii2-sortableJS",
+  "name": "coderovich/yii2-sortablejs",
   "description": "Yii2 implementation of the SortableJS/Sortable extension. To create reorderable drag-and-drop lists for modern browsers and touch devices.",
   "keywords": [
     "yii2",
