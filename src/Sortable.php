@@ -195,7 +195,7 @@ class Sortable extends Widget {
 	/**
 	 * @var string selector for delete buttons.
 	 */
-	public $deleteSelector = '.rubaxa-sortable-delete';
+	public $deleteSelector = '.sortablejs-delete';
 
 	/**
 	 * @var array the options for the underlying RubaXa Sortable widget.
@@ -243,11 +243,7 @@ class Sortable extends Widget {
 	public function init() {
 		parent::init();
 
-		Yii::$app->i18n->translations['yii2-rubaxa-sortable'] = [
-			'class'          => 'yii\i18n\PhpMessageSource',
-			'sourceLanguage' => 'en_US',
-			'basePath'       => '@vendor/yii-ui/yii2-rubaxa-sortable/messages',
-		];
+
 
 		$this->initClientOptions();
 		$this->initIcons();
@@ -281,14 +277,14 @@ class Sortable extends Widget {
 			$deleteIconContent = '';
 			$deleteIconOptions = [
 				'aria-hidden' => 'true',
-				'aria-label'  => Yii::t('yii2-rubaxa-sortable', 'Delete')
+				'aria-label'  => 'Delete'
 			];
 
 			$handleIconTag = 'span';
 			$handleIconContent = '';
 			$handleIconOptions = [
 				'aria-hidden' => 'true',
-				'aria-label'  => Yii::t('yii2-rubaxa-sortable', 'Move')
+				'aria-label'  => 'Move'
 			];
 
 			switch ($this->icons) {
@@ -350,11 +346,11 @@ class Sortable extends Widget {
 	 */
 	protected function initClientOptions() {
 		if (($this->addHandle || $this->itemHasEnabledOption('addHandle')) && empty($this->clientOptions['handle'])) {
-			$this->clientOptions['handle'] = '.rubaxa-sortable-handle';
+			$this->clientOptions['handle'] = '.sortablejs-handle';
 		}
 
 		if (($this->disabled || $this->itemHasEnabledOption('disabled')) && empty($this->clientOptions['filter'])) {
-			$this->clientOptions['filter'] = '.rubaxa-sortable-disabled';
+			$this->clientOptions['filter'] = '.sortablejs-disabled';
 		}
 	}
 
@@ -408,7 +404,7 @@ class Sortable extends Widget {
 				if (in_array($event,$this->_availableClientEvents)) {
 					$js[] = "jQuery('#$id').on('$event', $handler);";
 				} else {
-					throw new InvalidArgumentException('Unknown event "'.$event.'".');
+					throw new InvalidArgumentException(sprintf('Unknown event: %s', $event));
 				}
 			}
 

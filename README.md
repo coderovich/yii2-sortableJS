@@ -3,6 +3,11 @@ SortableJS for Yii 2
 
 This is an [Yii framework 2.0](http://www.yiiframework.com) to create reorderable drag-and-drop lists for modern browsers and touch devices.
 
+**Forked from https://github.com/yii-ui/yii2-rubaxa-sortable**
+
+**Fixed**:
+- Client events
+- SortableJS Plugin call 
 
 Installation
 ------------

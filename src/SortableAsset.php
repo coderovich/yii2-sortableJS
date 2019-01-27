@@ -6,12 +6,12 @@ namespace coderovich\sortablejs;
 use yii\web\AssetBundle;
 
 /**
- * Asset bundle for yii-ui/yii2-rubaxa-sortable
+ * Asset bundle for coderovich\sortablejs
  * Create reorderable drag-and-drop lists for modern browsers and touch devices.
  *
- * @see https://github.com/RubaXa/Sortable
- * @author Christoph Moeke <christophmoeke@gmail.com>
- * @since 1.0.0
+ * @see https://github.com/coderovich/sortableJS
+ * @author SPavlov <spavlov@li.ru>
+ * @since 1.2.0
  */
 class SortableAsset extends AssetBundle {
 	/***
