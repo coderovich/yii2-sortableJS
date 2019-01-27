@@ -17,13 +17,13 @@ The preferred way to install this extension is through [composer](https://getcom
 Either run
 
 ```
-php composer.phar require coderovich/yii2-sortableJS
+php composer.phar require coderovich/yii2-sortablejs
 ```
 
 or add
 
 ```
-"coderovich/yii2-sortableJS": "~1.0.0"
+"coderovich/yii2-sortablejs": "~1.0.0"
 ```
 
 to the require section of your `composer.json` file.
