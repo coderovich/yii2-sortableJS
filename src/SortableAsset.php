@@ -11,7 +11,7 @@ use yii\web\AssetBundle;
  *
  * @see https://github.com/coderovich/sortableJS
  * @author SPavlov <spavlov@li.ru>
- * @since 1.2.0
+ * @since 1.1.0
  */
 class SortableAsset extends AssetBundle {
 	/***

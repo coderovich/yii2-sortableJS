@@ -32,9 +32,9 @@ use Yii;
  * ]);
  * ```
  *
- * @see https://github.com/RubaXa/Sortable
- * @author Christoph Moeke <christophmoeke@gmail.com>
- * @since 1.0.0
+ * @see https://github.com/coderovich/sortableJS
+ * @author SPavlov <spavlov@li.ru>
+ * @since 1.1.0
  */
 class Sortable extends Widget {
 	/**
